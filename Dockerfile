@@ -8,6 +8,6 @@ RUN wget https://www.ubnt.com/downloads/unifi/4.6.6/UniFi.unix.zip
 RUN unzip UniFi.unix.zip
 WORKDIR /opt/UniFi
 
-EXPOSE 8443, 8080
+EXPOSE 8443 8080
 
 CMD ["java", "-jar", "lib/ace.jar", "start"]
