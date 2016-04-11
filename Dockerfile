@@ -4,7 +4,7 @@ MAINTAINER Aexea Carpentry
 RUN apt-get update && apt-get install -y wget openjdk-7-jre-headless binutils mongodb-server jsvc unzip
 RUN mkdir -p /opt
 WORKDIR /opt
-RUN wget https://www.ubnt.com/downloads/unifi/4.7.6/UniFi.unix.zip
+RUN wget https://www.ubnt.com/downloads/unifi/4.8.15/UniFi.unix.zip
 RUN unzip UniFi.unix.zip
 WORKDIR /opt/UniFi
 
