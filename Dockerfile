@@ -1,10 +1,10 @@
-FROM debian:jessie
+FROM debian:stretch
 MAINTAINER Aexea Carpentry
 
-RUN apt-get update && apt-get install -y openjdk-7-jre-headless binutils mongodb-server jsvc unzip
+RUN apt-get update && apt-get install -y openjdk-8-jre-headless binutils mongodb-server jsvc unzip
 RUN mkdir -p /opt
 WORKDIR /opt
-ADD https://www.ubnt.com/downloads/unifi/5.6.29/UniFi.unix.zip UniFi.unix.zip
+ADD https://www.ubnt.com/downloads/unifi/5.6.37/UniFi.unix.zip UniFi.unix.zip
 RUN unzip UniFi.unix.zip
 WORKDIR /opt/UniFi
 
